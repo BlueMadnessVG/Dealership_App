@@ -5,20 +5,23 @@ import PersonalInfoSection from "./PersonalInfoSection/PersonalInfoSection";
 import SubmitSection from "./SubmitSection/SubmitSection";
 import styles from "./Quote.module.css";
 import { useQuoteForm } from "./hooks/useQuoteForm";
-import { FormProvider, useFormContext } from "react-hook-form";
+import { FormProvider } from "react-hook-form";
 import { useQuoteFormSubmit } from "./hooks/useQuoteFormSubmit";
 
 import carImg from "@/assets/images/Fiat-card-no-bg.png";
 import type { QuoteFormData } from "@/schemas/quote.schema";
+import { useSnackbar } from "notistack";
 
 function Quote() {
   const methods = useQuoteForm();
-  const { submitForm, isSubmitting, success, error } = useQuoteFormSubmit();
+  const { enqueueSnackbar } = useSnackbar();
+
+  const { submitForm, isSubmitting, success, error } = useQuoteFormSubmit({
+    notify: (message, variant) => enqueueSnackbar(message, { variant }),
+  });
 
   const onSubmit = async (data: QuoteFormData) => {
-    console.log("Submitting data:", data);
     const result = await submitForm(data);
-    console.log("Submit result:", result);
   };
 
   return (
