@@ -15,10 +15,9 @@
   position: relative;
   display: inline-block;
   font-family: var(--font-primary);
-  font-weight: 800;
-  font-size: 0.79rem;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.1em;
   text-decoration: none;
   color: var(--black-secondary);
   transition: color 0.2s ease;
@@ -46,7 +45,6 @@
 @media (max-width: 767px) {
   .navigation_link_content {
     padding: 0.75rem 0;
-    font-size: 1rem; 
     width: 100%;
     text-align: left;
   }
@@ -58,28 +56,7 @@
 
 @media (max-width: 374px) {
   .navigation_link_content {
-    font-size: 0.95rem;
     padding: 0.5rem 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .navigation_link_content {
-    font-size: 0.75rem; 
-    letter-spacing: 0.02em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .navigation_link_content {
-    font-size: 0.79rem; 
-    letter-spacing: 0.025em; 
-  }
-}
-
-@media (min-width: 1280px) {
-  .navigation_link_content {
-    font-size: 0.85rem; 
   }
 }
 

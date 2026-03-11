@@ -24,14 +24,14 @@ function UserMenuModal() {
     <Modal>
       <motion.div
         className={styles.userMenuModal__Container}
-        initial={{ x: "100%" }}
+        initial={{ x: "-100%" }}
         animate={{ x: 0 }}
-        exit={{ x: "100%" }}
+        exit={{ x: "-100%" }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}
         onDragEnd={(_e, info) => {
-          if (info.offset.x < -100) {
+          if (info.offset.x < 100) {
             handleClose();
           }
         }}
@@ -46,14 +46,6 @@ function UserMenuModal() {
               </p>
             </div>
           </div>
-          <button
-            className={styles.userMenuModal__CloseButton}
-            onClick={handleClose}
-            type="button"
-            aria-label="Close menu"
-          >
-            x
-          </button>
         </div>
 
         <nav className={styles.userMenuModal__Nav}>

@@ -3,11 +3,12 @@
 .userMenuModal__Container {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 350px;
   height: 100vh;
   background: #000000;
   padding: 1.5rem;
+  margin-top: 3.8rem;
   z-index: 1000;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.8);
   display: flex;
