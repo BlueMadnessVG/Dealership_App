@@ -21,7 +21,7 @@ function Quote() {
   });
 
   const onSubmit = async (data: QuoteFormData) => {
-    const result = await submitForm(data);
+    await submitForm(data);
   };
 
   return (
