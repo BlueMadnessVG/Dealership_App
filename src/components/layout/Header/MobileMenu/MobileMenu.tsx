@@ -2,9 +2,9 @@
 import { motion, type Variants } from "framer-motion";
 import UserMenuModal from "@/components/ui/UserMenuModal/UserMenuModal";
 import { useModalContext } from "@/context/modal.context";
-import styles from "./UserMenu.module.css";
+import styles from "./MobileMenu.module.css";
 
-function UserMenu() {
+function MobileMenu() {
   const { state: isOpen, setState: setIsOpen } = useModalContext();
 
   const toggleMenu = () => {
@@ -67,4 +67,4 @@ function UserMenu() {
   );
 }
 
-export default UserMenu;
+export default MobileMenu;

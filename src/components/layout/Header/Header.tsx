@@ -1,7 +1,7 @@
 import styles from "./header.module.css";
 import Logo from "./Logo/Logo";
 import Navigation from "./Navigation/Navigation";
-import UserMenu from "./UserMenu/UserMenu";
+import MobileMenu from "./MobileMenu/MobileMenu";
 import { useIsDesktop } from "@/hooks/useMediaQuery";
 
 interface HeaderProps {
@@ -17,7 +17,7 @@ function Header({ showNav = false, showUserMenu = false }: HeaderProps) {
     <header className={styles.header}>
       <div className={styles.header_container}>
         <div className={styles.header_logoContainer}>
-          {!shouldShowNav && <UserMenu />}
+          {!shouldShowNav && <MobileMenu />}
           <Logo />
         </div>
 
