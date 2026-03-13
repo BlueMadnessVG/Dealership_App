@@ -6,38 +6,177 @@ import {
 } from "@/types/quote.types";
 
 export const CAR_MODELS = [
-  { id: "model-1", value: "model-1", label: "Modelo A", category: "Sedán" },
-  { id: "model-2", value: "model-2", label: "Modelo B", category: "SUV" },
-  { id: "model-3", value: "model-3", label: "Modelo C", category: "Hatchback" },
-  { id: "model-4", value: "model-4", label: "Modelo D", category: "Camioneta" },
-  { id: "model-5", value: "model-5", label: "Modelo E", category: "Deportivo" },
+  {
+    id: "pulse",
+    value: "pulse",
+    label: "Fiat Pulse",
+    category: "SUV",
+    year: 2025,
+    startingPrice: 399000,
+    image: "/images/models/pulse.webp",
+    tagline: "El SUV compacto que redefine el diseño urbano",
+    specs: {
+      horsepower: 130,
+      fuelEfficiency: "18 km/l",
+      acceleration: "9.4s",
+      transmission: "Automática CVT",
+      drivetrain: "FWD",
+    },
+  },
+  {
+    id: "fastback",
+    value: "fastback",
+    label: "Fiat Fastback",
+    category: "SUV Coupé",
+    year: 2025,
+    startingPrice: 469000,
+    image: "/images/models/fastback.webp",
+    tagline: "Diseño coupé y potencia que destacan en cada camino",
+    specs: {
+      horsepower: 175,
+      fuelEfficiency: "17 km/l",
+      acceleration: "8.3s",
+      transmission: "Automática CVT",
+      drivetrain: "FWD",
+    },
+  },
+  {
+    id: "argo",
+    value: "argo",
+    label: "Fiat Argo",
+    category: "Hatchback",
+    year: 2025,
+    startingPrice: 319000,
+    image: "/images/models/argo.webp",
+    tagline: "Compacto, eficiente y perfecto para la ciudad",
+    specs: {
+      horsepower: 109,
+      fuelEfficiency: "19 km/l",
+      acceleration: "10.2s",
+      transmission: "Manual / Automática",
+      drivetrain: "FWD",
+    },
+  },
+  {
+    id: "cronos",
+    value: "cronos",
+    label: "Fiat Cronos",
+    category: "Sedán",
+    year: 2025,
+    startingPrice: 329000,
+    image: "/images/models/cronos.webp",
+    tagline: "Elegancia y confort en cada trayecto",
+    specs: {
+      horsepower: 109,
+      fuelEfficiency: "18.5 km/l",
+      acceleration: "10.5s",
+      transmission: "Manual / Automática",
+      drivetrain: "FWD",
+    },
+  },
+  {
+    id: "toro",
+    value: "toro",
+    label: "Fiat Toro",
+    category: "Pickup",
+    year: 2025,
+    startingPrice: 479000,
+    image: "/images/models/toro.webp",
+    tagline: "La pickup que combina potencia, tecnología y estilo",
+    specs: {
+      horsepower: 185,
+      fuelEfficiency: "14 km/l",
+      acceleration: "9.8s",
+      transmission: "Automática 9 velocidades",
+      drivetrain: "AWD",
+    },
+  },
 ];
 
 export const CAR_VERSIONS = {
-  "model-1": [
-    { id: "v1-1", value: "v1-1", label: "Versión Base", price: 250000 },
-    { id: "v1-2", value: "v1-2", label: "Versión Media", price: 300000 },
-    { id: "v1-3", value: "v1-3", label: "Versión Full", price: 350000 },
+  pulse: [
+    { id: "pulse-drive", value: "pulse-drive", label: "Drive", price: 399000 },
+    {
+      id: "pulse-audace",
+      value: "pulse-audace",
+      label: "Audace",
+      price: 439000,
+    },
+    {
+      id: "pulse-impetus",
+      value: "pulse-impetus",
+      label: "Impetus",
+      price: 479000,
+    },
   ],
-  "model-2": [
-    { id: "v2-1", value: "v2-1", label: "Versión Base", price: 280000 },
-    { id: "v2-2", value: "v2-2", label: "Versión Media", price: 330000 },
-    { id: "v2-3", value: "v2-3", label: "Versión Full", price: 380000 },
+
+  fastback: [
+    {
+      id: "fastback-audace",
+      value: "fastback-audace",
+      label: "Audace",
+      price: 469000,
+    },
+    {
+      id: "fastback-impetus",
+      value: "fastback-impetus",
+      label: "Impetus",
+      price: 509000,
+    },
+    {
+      id: "fastback-abarth",
+      value: "fastback-abarth",
+      label: "Abarth",
+      price: 559000,
+    },
   ],
-  "model-3": [
-    { id: "v3-1", value: "v3-1", label: "Versión Base", price: 290000 },
-    { id: "v3-2", value: "v3-2", label: "Versión Media", price: 340000 },
-    { id: "v3-3", value: "v3-3", label: "Versión Full", price: 390000 },
+
+  argo: [
+    { id: "argo-drive", value: "argo-drive", label: "Drive", price: 319000 },
+    {
+      id: "argo-trekking",
+      value: "argo-trekking",
+      label: "Trekking",
+      price: 349000,
+    },
+    { id: "argo-hgt", value: "argo-hgt", label: "HGT", price: 379000 },
   ],
-  "model-4": [
-    { id: "v4-1", value: "v4-1", label: "Versión Base", price: 320000 },
-    { id: "v4-2", value: "v4-2", label: "Versión Media", price: 370000 },
-    { id: "v4-3", value: "v4-3", label: "Versión Full", price: 420000 },
+
+  cronos: [
+    {
+      id: "cronos-drive",
+      value: "cronos-drive",
+      label: "Drive",
+      price: 329000,
+    },
+    {
+      id: "cronos-precision",
+      value: "cronos-precision",
+      label: "Precision",
+      price: 369000,
+    },
+    {
+      id: "cronos-stile",
+      value: "cronos-stile",
+      label: "Stile",
+      price: 399000,
+    },
   ],
-  "model-5": [
-    { id: "v5-1", value: "v5-1", label: "Versión Base", price: 350000 },
-    { id: "v5-2", value: "v5-2", label: "Versión Media", price: 400000 },
-    { id: "v5-3", value: "v5-3", label: "Versión Full", price: 450000 },
+
+  toro: [
+    {
+      id: "toro-freedom",
+      value: "toro-freedom",
+      label: "Freedom",
+      price: 479000,
+    },
+    {
+      id: "toro-volcano",
+      value: "toro-volcano",
+      label: "Volcano",
+      price: 529000,
+    },
+    { id: "toro-ranch", value: "toro-ranch", label: "Ranch", price: 589000 },
   ],
 };
 
