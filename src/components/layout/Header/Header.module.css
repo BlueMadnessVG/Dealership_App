@@ -1,18 +1,9 @@
 .header {
-  position: sticky;
+  position: absolute;
+  width: 100%;
   top: 0;
   z-index: 2000;
-
   font-family: var(--font-secondary);
-
-  background: rgba(255, 255, 255, 0.75);
-
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border-bottom: 1px solid rgba(229, 231, 235, 0.6);
-
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 
   transition:
     background 0.3s ease,
@@ -56,6 +47,14 @@
 }
 
 @media (min-width: 1024px) {
+  .header {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+
   .header_container {
     gap: 2.4rem;
   }
