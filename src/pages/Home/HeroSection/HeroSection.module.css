@@ -1,11 +1,11 @@
 .HeroSection__container {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   overflow: hidden;
   padding: 3rem 1rem;
-  min-height: 85vh;
+  min-height: 100vh;
 }
 
 .HeroSection__video {
@@ -28,10 +28,9 @@
 .HeroSection__content {
   position: relative;
   z-index: 2;
-  max-width: 900px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   gap: 1.5rem;
   color: white;
@@ -48,28 +47,6 @@
   max-width: 600px;
   font-size: 1.05rem;
   opacity: 0.9;
-}
-
-.HeroSection__specs {
-  display: flex;
-  gap: 2rem;
-  margin-top: 0.5rem;
-}
-
-.HeroSection__spec {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.HeroSection__specValue {
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.HeroSection__specLabel {
-  font-size: 0.85rem;
-  opacity: 0.8;
 }
 
 .HeroSection__actions {
@@ -109,39 +86,6 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-.HeroSection__models {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.HeroSection__modelsLabel {
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
-
-.HeroSection__modelList {
-  display: flex;
-  gap: 0.6rem;
-}
-
-.HeroSection__modelList button {
-  padding: 0.35rem 0.8rem;
-  font-size: 0.85rem;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.08);
-  color: white;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.HeroSection__modelList button:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
 @media (min-width: 768px) {
   .HeroSection__container {
     padding: 3.5rem 1.5rem;
@@ -152,8 +96,8 @@
     height: calc(100% + 100px);
   }
 
-  .HeroSection__specs {
-    gap: 3rem;
+  .HeroSection__content {
+      padding: 3.4rem 5rem;
   }
 }
 
@@ -165,9 +109,5 @@
   .HeroSection__video {
     top: -120px;
     height: calc(100% + 120px);
-  }
-
-  .HeroSection__content {
-    gap: 2rem;
   }
 }

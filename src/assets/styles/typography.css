@@ -37,7 +37,7 @@ body {
 }
 
 h1, h2 {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
   line-height: var(--leading-tight);
 }
